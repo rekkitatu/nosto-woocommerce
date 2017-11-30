@@ -27,7 +27,7 @@
   -->
 
 <!--suppress XmlUnboundNsPrefix -->
-<project name="nosto-for-woocommerce" default="dist">
+<project name="nosto-for-woocommerce-forked-by-wysiwygoy" default="dist">
 
     <property name="package"  value="${phing.project.name}" override="true" />
     <property name="buildsrc" value="./build/src" override="false" />

@@ -1,10 +1,10 @@
 <?php
 /*
-	Plugin Name: WooCommerce Nosto Tagging
-	Plugin URI: http://wordpress.org/extend/plugins/woocommerce-nosto-tagging/
+	Plugin Name: WooCommerce Nosto Tagging - Forked by Wysiwyg Oy
+	Plugin URI: https://github.com/wysiwygoy/nosto-woocommerce
 	Description: Implements the required tagging blocks for using Nosto marketing automation service.
-	Author: Nosto Solutions Ltd
-	Version: 1.1.1
+	Author: Nosto Solutions Ltd, Wysiwyg Oy
+	Version: 1.1.1-wysiwyg1
 	License: GPLv2
 */
 
@@ -38,7 +38,7 @@ class WC_Nosto_Tagging
 	 *
 	 * @since 1.0.0
 	 */
-	const VERSION = '1.1.1';
+	const VERSION = '1.1.1-wysiwyg1';
 
 	/**
 	 * Minimum WordPress version this plugin works with.
