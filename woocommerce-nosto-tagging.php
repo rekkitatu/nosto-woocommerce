@@ -376,6 +376,38 @@ class WC_Nosto_Tagging
 				$data['description']    = (string) $product->post->post_content;
 				$data['list_price']     = $this->format_price( $this->get_list_price_including_tax( $product ) );
 
+				foreach (
+					array(
+						'url',
+						'product_id',
+						'name',
+						'image_url',
+						'price',
+						'price_currency_code',
+						'availability',
+						'categories', // Array, the actual nosto property name is 'category'
+						'description',
+						'list_price',
+						'brand',
+						'tag1s', // Array
+						'tag2s', // Array
+						'tag3s', // Array
+						'review_count',
+						'rating_value',
+						'alternate_image_urls', // Array
+						'date_published',
+						'nosto_skus', // Array of arrays
+					) as $property
+				) {
+					$value = array_key_exists( $property, $data ) ? $data[ $property ] : null;
+					$value = apply_filters( "wcnt_product_property_$property", $value, $product );
+					if ( $value == null ) {
+						unset( $data[$property] );
+					} else {
+						$data[ $property ] = $value;
+					}
+				}
+
 				if ( ! empty( $data ) ) {
 					$this->render( self::TEMPLATE_PRODUCT_TAGGING, array( 'product' => $data ), self::PAGE_TYPE_PRODUCT );
 				}

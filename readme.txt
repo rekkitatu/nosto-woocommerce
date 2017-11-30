@@ -112,6 +112,45 @@ be added to the shops theme in order for the plugin to function to its full exte
 	* You need to add `<?php do_action('wcnt_notfound_content'); ?>` in your themes not found page template (404.php) at the
 	appropriate location
 
+By default the plugin provides values for the most important Nosto properties. You can customize the values and
+provide missing product properties by using WordPress filters. The filter functions take the property value and the WooCommerce
+product object as parameters and they must return the (possibly modified) value. The available filters are:
+
+* wcnt_product_property_url
+* wcnt_product_property_product_id
+* wcnt_product_property_name
+* wcnt_product_property_image_url
+* wcnt_product_property_price
+* wcnt_product_property_price_currency_code
+* wcnt_product_property_availability
+* wcnt_product_property_categories
+    * value is an array of category strings
+* wcnt_product_property_description
+* wcnt_product_property_list_price
+* wcnt_product_property_brand
+* wcnt_product_property_tag1s
+    * value is an array of tag strings
+* wcnt_product_property_tag2s
+    * value is an array of tag strings
+* wcnt_product_property_tag3s
+    * value is an array of tag strings
+* wcnt_product_property_review_count
+* wcnt_product_property_rating_value
+* wcnt_product_property_alternate_image_urls
+    * value is an array of urls
+* wcnt_product_property_date_published
+* wcnt_product_property_nosto_skus
+    * value is an array of arrays where each sub-array can have keys
+        * id
+        * name
+        * price
+        * list_price
+        * url
+        * image_url
+        * availability
+        * custom_fields
+            * an array of custom field names => custom field values
+
 The "Nosto Tagging" widget added by the plugin for showing Nosto elements in the shops sidebars, needs to be configured
 if you wish to use it. The widget can be found under the "Appearance->Widgets" section and it works like any other
 WordPress widget. After dropping the widget in the appropriate sidebar container, you need to configure its Nosto ID.
