@@ -128,11 +128,11 @@ product object as parameters and they must return the (possibly modified) value.
 * wcnt_product_property_description
 * wcnt_product_property_list_price
 * wcnt_product_property_brand
-* wcnt_product_property_tag1s
+* wcnt_product_property_tags1
     * value is an array of tag strings
-* wcnt_product_property_tag2s
+* wcnt_product_property_tags2
     * value is an array of tag strings
-* wcnt_product_property_tag3s
+* wcnt_product_property_tags3
     * value is an array of tag strings
 * wcnt_product_property_review_count
 * wcnt_product_property_rating_value
