@@ -33,13 +33,13 @@
 		<?php if ( ! empty( $product['brand'] ) ): ?>
 			<span class="brand"><?php echo esc_html( $product['brand'] ); ?></span>
 		<?php endif; ?>
-		<?php foreach ( $product['tag1s'] as $tag ): ?>
+		<?php foreach ( $product['tags1'] as $tag ): ?>
 			<span class="tag1"><?php echo esc_html( $tag ); ?></span>
 		<?php endforeach; ?>
-		<?php foreach ( $product['tag2s'] as $tag ): ?>
+		<?php foreach ( $product['tags2'] as $tag ): ?>
 			<span class="tag2"><?php echo esc_html( $tag ); ?></span>
 		<?php endforeach; ?>
-		<?php foreach ( $product['tag3s'] as $tag ): ?>
+		<?php foreach ( $product['tags3'] as $tag ): ?>
 			<span class="tag3"><?php echo esc_html( $tag ); ?></span>
 		<?php endforeach; ?>
 		<?php if ( ! empty( $product['review_count'] ) ): ?>

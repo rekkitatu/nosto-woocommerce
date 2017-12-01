@@ -389,9 +389,9 @@ class WC_Nosto_Tagging
 						'description',
 						'list_price',
 						'brand',
-						'tag1s', // Array
-						'tag2s', // Array
-						'tag3s', // Array
+						'tags1', // Array
+						'tags2', // Array
+						'tags3', // Array
 						'review_count',
 						'rating_value',
 						'alternate_image_urls', // Array
