@@ -407,7 +407,7 @@ class WC_Nosto_Tagging
 				) {
 					$value = array_key_exists( $property, $data ) ? $data[ $property ] : null;
 					$value = apply_filters( "wcnt_product_property_$property", $value, $product );
-					if ( $value == null ) {
+					if ( $value === null ) {
 						unset( $data[$property] );
 					} else {
 						$data[ $property ] = $value;
