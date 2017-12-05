@@ -376,6 +376,12 @@ class WC_Nosto_Tagging
 				$data['description']    = (string) $product->post->post_content;
 				$data['list_price']     = $this->format_price( $this->get_list_price_including_tax( $product ) );
 
+				$data['tags1'] = array();
+				$data['tags2'] = array();
+				$data['tags3'] = array();
+				$data['alternate_image_urls'] = array();
+				$data['nosto_skus'] = array();
+
 				foreach (
 					array(
 						'url',
